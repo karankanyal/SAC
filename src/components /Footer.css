@@ -1,0 +1,44 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0a500;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .footer .social-icons i {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .footer .social-icons i:hover {
+    color: #f0a500;
+  }
+  

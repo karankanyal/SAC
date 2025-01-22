@@ -1,0 +1,39 @@
+.hero {
+    position: relative;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/home/lenovo/Desktop/UI_UX/hero.png') no-repeat center center/cover;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .carousel-controls button {
+    background-color: #f0a500;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .carousel-controls button:hover {
+    background-color: #333;
+  }
+  
