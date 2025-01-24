@@ -1,41 +1,115 @@
+
+/* General header styles */
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    font-family: Arial, sans-serif;
+  background-color: #0a1d1c; /* Dark green background */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 10px 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff20; /* Subtle separator */
+}
+
+.logo-image {
+  height: 60px; /* Adjusted for the design */
+}
+
+.logo {
+  width: 100%; /* Each div spans full width */
+  display: flex;
+}
+
+.abc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: 'Cursive', serif; /* Decorative font */
+  color: #e0ded8; /* Light beige text */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: #e0ded8; /* Light beige text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #8bbf9f; /* Light green hover */
+}
+
+/* Social media icons styles */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #e0ded8; /* Default icon color */
+  font-size: 1.2rem; /* Icon size */
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #8bbf9f; /* Light green hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+
+  .logo-image {
+    margin-bottom: 10px;
   }
-  
-  .header nav {
-    display: flex;
-    gap: 20px;
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;  
   }
-  
-  .header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .header nav a:hover {
-    color: #f0a500;
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
   }
-  
-  .header .social-icons i {
-    margin: 0 10px;
-    cursor: pointer;
-    color: #fff;
-  }
-  
-  .header .social-icons i:hover {
-    color: #f0a500;
-  }
-  
+}
