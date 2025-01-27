@@ -22,7 +22,7 @@ function Slider() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative h-96 ">
       {/* Slider */}
 
       {/* <div
@@ -45,13 +45,13 @@ function Slider() {
       </div> */}
 
       <div
-        className="w-screen h-96 flex transition-transform ease-in-out duration-1000"
+        className="w-screen h-full flex transition-transform ease-in-out duration-1000"
         style={{ transform: `translateX(-${currentIndex * 100}vw)` }}
       >
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-screen h-full flex-shrink-0 flex justify-center items-center border border-black"
+            className="px-6 w-screen h-full flex-shrink-0 flex justify-center items-center border border-black"
           >
             <img
               src={image}
@@ -66,7 +66,7 @@ function Slider() {
       {/* Left Button */}
       <button
         onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg"
+        className="mx-6 cursor-pointer absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg"
       >
         <ChevronLeft className="w-6 h-6 text-black" />
       </button>
@@ -74,7 +74,7 @@ function Slider() {
       {/* Right Button */}
       <button
         onClick={goToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg"
+        className="mx-6 cursor-pointer absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg"
       >
         <ChevronRight className="w-6 h-6 text-black" />
       </button>
