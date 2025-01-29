@@ -22,7 +22,7 @@ function Slider() {
   };
 
   return (
-    <div className="relative h-96 ">
+    <div className="relative h-96 my-3">
       {/* Slider */}
 
       {/* <div

@@ -16,11 +16,16 @@ function ProductGrid() {
     Image4,
   ];
   return (
-    <div className="m-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {images.map((image, index) => (
-        <ProductCard image={image} key={index} />
-      ))}
-    </div>
+    <>
+      <h1 className="w-full bg-gray-800 text-2xl font-bold p-1">
+        Top Articles
+      </h1>
+      <div className="m-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {images.map((image, index) => (
+          <ProductCard image={image} key={index} />
+        ))}
+      </div>
+    </>
   );
 }
 

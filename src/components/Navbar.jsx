@@ -6,10 +6,10 @@ export default function Navbar() {
     <header className="flex items-center justify-between h-12 w-full px-16 bg-black text-white">
       {/* Left: Navigation Links */}
       <nav className="flex space-x-6 ">
-        <a href="#" className="">
+        <a href="#" className="hover:text-gray-400">
           Our Story
         </a>
-        <a href="#" className="">
+        <a href="#" className="hover:text-gray-400">
           Shop
         </a>
         <a href="#" className="hover:text-gray-400">

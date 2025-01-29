@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header.jsx";
 import Slider from "./components/Slider.jsx";
 import ProductGrid from "./components/ProductGrid.jsx";
-// import About from "./components/About.jsx";
+import About from "./components/About.jsx";
 import Categories from "./components/Categories.jsx";
 // import Footer from "./components/Footer.jsx";
 
@@ -13,9 +13,9 @@ function App() {
       <div className="overflow-x-hidden bg-black">
         <Slider />
         <ProductGrid />
+        <About />
         <Categories />
-        {/* <About />
-      <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </>
   );
