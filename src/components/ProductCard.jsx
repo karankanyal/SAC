@@ -5,7 +5,7 @@ import Button from "./Button";
 
 function ProductCard({ image }) {
   return (
-    <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-black border border-slate-300">
+    <div className="max-w-2xl flex flex-col flex-shrink rounded-lg overflow-hidden shadow-lg bg-black border border-slate-300">
       {/* Image section */}
       <div className="relative">
         <img

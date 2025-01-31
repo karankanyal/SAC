@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image1 from "../assets/images/5 years of my life avl .jpg";
 import Image2 from "../assets/images/kainchi dham avl .jpg";
@@ -20,6 +20,15 @@ function Slider() {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNext();
+    }, 8000); // Change slide every 3 seconds
+
+    // Cleanup function to clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, [currentIndex]); // Re-run effect when currentIndex changes
 
   return (
     <div className="relative h-96 my-3">

@@ -18,7 +18,7 @@ function Categories() {
   return (
     <>
       <h1 className="w-full bg-gray-800 text-2xl font-bold p-1">Category</h1>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 cursor-pointer">
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4 cursor-pointer">
         {categories.map((category, index) => (
           <div
             key={index}
