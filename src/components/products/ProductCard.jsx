@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHeart, FaBolt } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import Button from "./Button";
+import Button from "../Button";
 
 function ProductCard({ image }) {
   return (

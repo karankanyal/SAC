@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
-import Image1 from "../assets/images/5 years of my life avl .jpg";
-import Image2 from "../assets/images/kainchi dham avl .jpg";
-import Image3 from "../assets/images/nature_s reflection .jpg";
-import Image4 from "../assets/images/mystical land Nepal avl .jpg";
+import Image1 from "../../assets/images/5 years of my life avl .jpg";
+import Image2 from "../../assets/images/kainchi dham avl .jpg";
+import Image3 from "../../assets/images/nature_s reflection .jpg";
+import Image4 from "../../assets/images/mystical land Nepal avl .jpg";
 
-function MoreArticles() {
+function MoreArticlesFromArtist() {
   const images = [
     Image1,
     Image2,
@@ -44,4 +44,4 @@ function MoreArticles() {
   );
 }
 
-export default MoreArticles;
+export default MoreArticlesFromArtist;

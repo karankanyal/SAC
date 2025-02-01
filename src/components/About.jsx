@@ -1,9 +1,10 @@
 import AboutSlide from "./AboutSlide";
+import Heading from "./Heading";
 
 function About() {
   return (
     <section className="relative w-full overflow-hidden ">
-      <h1 className="w-full bg-gray-800 text-2xl font-bold p-1">About</h1>
+      <Heading title="About" />
       <div className="grid py-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full h-auto">
         {/* Slide 1 */}
         <AboutSlide

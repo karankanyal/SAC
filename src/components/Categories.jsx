@@ -1,3 +1,5 @@
+import Heading from "./Heading";
+
 import Image1 from "../assets/images/5 years of my life avl .jpg";
 import Image2 from "../assets/images/kainchi dham avl .jpg";
 import Image3 from "../assets/images/nature_s reflection .jpg";
@@ -17,7 +19,7 @@ function Categories() {
 
   return (
     <>
-      <h1 className="w-full bg-gray-800 text-2xl font-bold p-1">Category</h1>
+      <Heading title="Category" />
       <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4 cursor-pointer">
         {categories.map((category, index) => (
           <div

@@ -23,7 +23,7 @@ function Button({
 }) {
   return (
     <button
-      className={`flex items-center gap-1
+      className={`flex text-xs items-center gap-1
       text-${textColor} font-bold p-2 rounded 
          ${bgColors[bgColor] || "bg-transparent"}`}
     >
